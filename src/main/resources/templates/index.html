@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>6MWT Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          6MWT- MH
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="website-items-wrapper">
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+
+            <div class="subtitle">Spirometry.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/devcamp.png" alt="">
+            </div>
+
+            <div class="subtitle">EpWorth Sleepiness Scale.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/eventbrite.png" alt="">
+            </div>
+
+            <div class="subtitle">SF 36 Total.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo12.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/shop-hacker.png" alt="">
+            </div>
+
+            <div class="subtitle">Post Functional Status Scale.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="websiteimg-background" style="background-image:url(images/photo6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/crondose.png" alt="">
+            </div>
+
+            <div class="subtitle">Modified Fatigue Impact Scale (MFIS).</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dailysmarty.png" alt="">
+            </div>
+
+            <div class="subtitle">Patient Health Questionnaire - 9.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo10.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">General Anxiety Disorder - 7.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo14.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/devtrunk.png" alt="">
+            </div>
+
+            <div class="subtitle">SF Physical.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">SF Social.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo13.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/ministry-safe.png" alt="">
+            </div>
+
+            <div class="subtitle">MFIS - Physical.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/open-devos.png" alt="">
+            </div>
+
+            <div class="subtitle">MFIS - Cognitive.</div>
+          </div>
+        </div>
+
+        <div class="website-item-wrapper">
+          <div class="website-img-background" style="background-image:url(images/photo8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/toastability.png" alt="">
+            </div>
+
+            <div class="subtitle">MFIS - Psychological.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const websiteItems = document.querySelectorAll('.website-item-wrapper');
+
+  websiteItems.forEach(websiteItem => {
+	  websiteItem.addEventListener('mouseover', () => {
+      console.log(websiteItem.childNodes[1].classList)
+      websiteItem.childNodes[1].classList.add('image-blur');
+    });
+
+	  websiteItem.addEventListener('mouseout', () => {
+      console.log(websiteItem.childNodes[1].classList)
+     websiteItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
